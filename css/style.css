@@ -463,6 +463,118 @@ overflow: hidden;
     width: 30px;
 }
 
+/* Media Queries */
+
+@media (max-width:800px){
+    .navMenu{
+        display: block;
+    }
+
+    .navLinkMenu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .navLinkShow{
+        --show: block;
+        opacity: 1;
+        pointer-events: unset; 
+    }
+
+    .navClose{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .heroTitle{
+        font-size: 2.5em;
+    }
+
+    .aboutMain{
+        gap: 2em;
+    }
+
+    .aboutIcons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .knowledgeContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .knowledgePicture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .priceTable{
+        gap: 7em;  
+    }
+
+    .testimonyContainer{
+        grid-template-columns: 25px 1fr 30px;
+    }
+
+    .testimonyBody{
+        /* justify-content: center; */
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+    }
+
+    .testimonyPicture{
+        display: flex;
+        justify-content: center;
+    }
+
+    .questionsCopy{
+        width: 100%;
+    }
+
+    .footerContainer{
+        flex-wrap: wrap;
+    }
+
+    .navFooter{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navLinkFooter{
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .footerForm{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footerInput{
+        flex: 1;
+    }
+}
+
+
 
 
 
