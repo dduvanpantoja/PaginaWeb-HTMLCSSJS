@@ -335,6 +335,7 @@ overflow: hidden;
 }
 
 .questionsTitle{
+    text-align: left;
     display: flex;
     font-size: 20px;
     padding: 30px 0 30px;
@@ -571,6 +572,90 @@ overflow: hidden;
 
     .footerInput{
         flex: 1;
+    }
+
+    /* Media para max-width */
+    @media (max-width:600px){
+        .hero{
+            height: 750px;
+        }
+        .heroTitle{
+            font-size: 2rem;
+        }
+
+        .heroParagraph{
+            font-size: 1em;
+        }
+
+        .navImg{
+            width: 30px;
+        }
+
+        .subtitle{
+            font-size: 1.8rem;
+        }
+
+        .priceElement{
+            width: 90%;
+        }
+
+        .priceElementBest{
+            width: 90%;
+            /* padding: 40px; */
+        }
+
+        .pricePrice{
+            font-size: 2rem;
+        }
+
+        .testimony{
+            --pading-container: 60px 0;
+        }
+
+        .testimonyContainer{
+            grid-template-columns: 28px 1fr 28px;
+            gap: .9em;
+        }
+
+        .testimonyArrow{
+            width: 100%;
+        }
+
+        .testimonyCourse{
+            margin-top: 15px;
+        }
+
+        .questionsTitle{
+            font-size: 1rem;
+        }
+
+        .footerTitle{
+            justify-self: start;
+            margin-bottom: 15px;
+        }
+
+        .navFooter{
+            padding-bottom: 60px;
+        }
+
+        .navLinkFooter{
+            justify-content: space-between;
+        }
+
+        .footerInputs{
+            flex-wrap: wrap;
+        }
+
+        .footerInput{
+            margin: 0;
+            flex-basis: 100%;
+            margin-bottom: 16px;
+        }
+
+        .footerSubmit{
+            margin: 0;
+            width: 100%;
+        }
     }
 }
 
