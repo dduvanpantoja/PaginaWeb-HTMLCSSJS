@@ -88,7 +88,6 @@ body{
 }
 
 /* Hero container */
-
 .heroContainer{
     max-width: 800px;
     --padding-container: 0;
@@ -251,7 +250,6 @@ overflow: hidden;
 }
 
 /* Testimony */
-
 .testimony{
     background-color: #e5e5f7;
 }
@@ -306,7 +304,6 @@ overflow: hidden;
 }
 
 /* QUESTIONS */
-
 .questions{
     text-align: center;
 }
@@ -465,7 +462,6 @@ overflow: hidden;
 }
 
 /* Media Queries */
-
 @media (max-width:800px){
     .navMenu{
         display: block;
@@ -535,7 +531,6 @@ overflow: hidden;
     }
 
     .testimonyBody{
-        /* justify-content: center; */
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
         gap: 3em;
